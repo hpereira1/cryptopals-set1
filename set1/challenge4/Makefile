@@ -7,7 +7,7 @@ CFLAGS = -Wall -std=c++11
 # Especifica o nome do executável
 TARGET = main_program
 
-OBJS = chall1.o ../cryptopals.o
+OBJS = chall4.o ../cryptopals.o
 # Regra padrão executada ao rodar 'make'
 all: $(TARGET)
 
@@ -16,8 +16,8 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
 
 # Compila o arquivo main.cpp para criar o objeto main.o
-chall1.o: chall1.cpp ../cryptopals.h
-	$(CC) $(CFLAGS) -I../ -c chall1.cpp
+chall4.o: chall4.cpp ../cryptopals.h
+	$(CC) $(CFLAGS) -I../ -c chall4.cpp
 
 cryptopals.o: ../cryptopals.cpp ../cryptopals.h
 	$(CC) $(CFLAGS) -c ../cryptopals.cpp

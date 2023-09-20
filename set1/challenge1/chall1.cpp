@@ -11,9 +11,6 @@ int main(){
   std::vector<uint8_t> byte_vec = c.hex2bytes(s);
   std::string result = c.bytes2base64(byte_vec);
 
-  for (auto a : result)
-  {
-    std::cout << (a);
-  }
+  std::cout << result << std::endl;
   return 0;
 }
